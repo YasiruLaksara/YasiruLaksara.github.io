@@ -32,6 +32,12 @@ header .subtitle {
   margin: 10px 0;
 }
 
+header .specialization {
+  font-size: 1.3em; /* Slightly smaller than the subtitle */
+  color: #ffd700; /* Gold color to make it stand out */
+  margin: 5px 0; /* Add a little spacing */
+}
+
 header .university a {
   color: #ffd700;
   text-decoration: none;
@@ -96,10 +102,18 @@ header .university a {
   color: white;
   text-decoration: none;
 }
+
 body {
   margin: 0;
   text-align: center;
   background-color: #bbe2ec;
   font-size: 20px;
   color: #40514e;
+}
+
+.university-img {
+  width: 30px; /* Adjust size based on how big you want the image */
+  height: 30px;
+  margin-right: 10px; /* Space between image and text */
+  vertical-align: middle; /* Align image with text */
 }
