@@ -112,8 +112,9 @@ body {
 }
 
 .university-img {
-  width: 30px; /* Adjust size based on how big you want the image */
-  height: 30px;
+  width: 30px; /* Fixed width */
+  height: auto; /* Keeps the image aspect ratio */
   margin-right: 10px; /* Space between image and text */
   vertical-align: middle; /* Align image with text */
+  max-width: 100%; /* Ensures the image does not exceed its container */
 }
