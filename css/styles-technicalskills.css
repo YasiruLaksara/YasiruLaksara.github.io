@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.education-div {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.education-div h1 {
+  font-size: 2.5em;
+  color: #0072ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 1.5em;
+  color: #0072ff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0072ff;
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  position: relative; /* Added for positioning stars */
+}
+
+/* Star Rating Container Styling */
+.stars-container {
+  display: flex;
+  justify-content: flex-end; /* Align stars to the right */
+  margin-top: 10px; /* Optional: Add spacing above stars */
+}
+
+/* Star Rating Styling */
+.stars {
+  display: inline-block;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  font-size: 1.5em;
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.stars input[type="radio"]:checked ~ label {
+  color: #f5c518;
+}
+
+/* Hover Effects */
+ul li:hover {
+  background-color: #e0e0e0;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #f5c518;
+}

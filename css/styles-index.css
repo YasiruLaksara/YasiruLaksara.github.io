@@ -1,0 +1,105 @@
+body {
+  font-family: "Corben", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  position: relative;
+}
+
+header .cloud {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  width: 100px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header .subtitle {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+header .university a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: white;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 75%;
+  width: 250px;
+  height: 250px;
+}
+
+.section {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.section h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.section-img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background: #0072ff;
+  color: white;
+}
+
+.footer .contact {
+  margin-bottom: 20px;
+}
+
+.footer .btn {
+  background: #ffd700;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #bbe2ec;
+  font-size: 20px;
+  color: #40514e;
+}

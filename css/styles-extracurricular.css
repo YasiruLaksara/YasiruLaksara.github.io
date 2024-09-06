@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.activities-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.activities-table th,
+.activities-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.activities-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.activities-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.activities-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.activities-table td {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .activities-table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .activities-table th,
+  .activities-table td {
+    padding: 8px;
+  }
+}
