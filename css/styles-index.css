@@ -110,11 +110,8 @@ body {
   font-size: 20px;
   color: #40514e;
 }
-
-.university-img {
-  width: 30px; /* Fixed width */
-  height: auto; /* Keeps the image aspect ratio */
-  margin-right: 10px; /* Space between image and text */
-  vertical-align: middle; /* Align image with text */
-  max-width: 100%; /* Ensures the image does not exceed its container */
+header .specialization {
+  font-size: 1.3em; /* Slightly smaller than the subtitle */
+  color: #ffd700; /* Gold color to make it stand out */
+  margin: 5px 0; /* Add a little spacing */
 }
