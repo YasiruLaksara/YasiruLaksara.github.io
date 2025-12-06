@@ -1,7 +1,3 @@
-// ========================================
-// MODERN PORTFOLIO JAVASCRIPT
-// ========================================
-
 // ----- Page Load Progress Bar -----
 window.addEventListener('load', () => {
   const loadingBar = document.querySelector('.loading-bar');
