@@ -1459,6 +1459,44 @@ section:nth-child(7) { animation-delay: 0.6s; }
   border: 1px solid #334155;
 }
 
+.education-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.education-emblem {
+  flex-shrink: 0;
+}
+
+.education-emblem img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 0.3rem;
+  background: var(--light-bg);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+/* Make university emblem slightly smaller */
+.education-item:first-child .education-emblem img {
+  width: 45px;
+  height: 45px;
+}
+
+[data-theme="dark"] .education-emblem img {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.education-details {
+  flex: 1;
+  min-width: 0;
+}
+
 .education-degree {
   font-size: 1.3rem;
   font-weight: 600;
@@ -2441,6 +2479,17 @@ section:nth-child(7) { animation-delay: 0.6s; }
 
   .education-content {
     padding: 1.5rem;
+  }
+
+  .education-emblem img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* University emblem smaller on mobile */
+  .education-item:first-child .education-emblem img {
+    width: 35px;
+    height: 35px;
   }
 
   .education-degree {
