@@ -98,10 +98,11 @@ img {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .nav-logo {
@@ -145,16 +146,21 @@ img {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.2rem;
+  margin: 0;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link {
   color: var(--text-dark);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   position: relative;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 [data-theme="dark"] .nav-link {
@@ -211,7 +217,8 @@ img {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-left: 2rem;
+  margin-left: auto;
+  flex-shrink: 0;
   position: relative;
   z-index: 1001;
 }
