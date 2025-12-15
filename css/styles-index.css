@@ -1479,8 +1479,8 @@ section:nth-child(7) { animation-delay: 0.6s; }
 }
 
 .education-emblem img {
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   border-radius: 8px;
   padding: 0.3rem;
@@ -1491,8 +1491,8 @@ section:nth-child(7) { animation-delay: 0.6s; }
 
 /* Make university emblem slightly smaller */
 .education-item:first-child .education-emblem img {
-  width: 45px;
-  height: 45px;
+  width: 120px;
+  height: 120px;
 }
 
 [data-theme="dark"] .education-emblem img {
@@ -2503,14 +2503,14 @@ section:nth-child(7) { animation-delay: 0.6s; }
   }
 
   .education-emblem img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   /* University emblem smaller on mobile */
   .education-item:first-child .education-emblem img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
 
   .education-degree {
