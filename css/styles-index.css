@@ -211,7 +211,7 @@ img {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-right: 1rem;
+  margin-left: 2rem;
   position: relative;
   z-index: 1001;
 }
