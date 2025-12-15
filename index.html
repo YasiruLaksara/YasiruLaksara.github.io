@@ -3,133 +3,996 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yasiru Laksara</title>
+    <title>Yasiru Laksara - Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of Yasiru Laksara - Computer Science & Engineering Student specializing in Data Science and Machine Learning" />
     <link rel="stylesheet" href="css/styles-index.css" />
     <link rel="icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Corben&family=Lalezar&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <img class="cloud" src="images/cloud.png" alt="Cloud Image" />
-      <h1>I'm Yasiru Laksara</h1>
-      <p class="subtitle">Computer Science & Engineering Student</p>
-      <p class="specialization">Specializing in Data Science</p>
-      <!-- Added line -->
-      <p class="university">
-        3rd Year Undergraduate at
-        <a href="https://uom.lk/"> University Of Moratuwa </a>
-      </p>
+    <!-- Loading Bar -->
+    <div class="loading-bar"></div>
 
-      <img class="cloud" src="images/cloud.png" alt="Cloud Image" />
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">💼</span>
+          <span class="logo-text">Yasiru Laksara</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#volunteer" class="nav-link">Volunteer</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-title"><span class="highlight">Yasiru Laksara</span></h1>
+        <p class="hero-subtitle">Data Science & Machine Learning Enthusiast</p>
+        <p class="hero-description">
+          4th Year Computer Science & Engineering Undergraduate at University of Moratuwa
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="documents/Yasiru Laksara - CV.pdf" download class="btn btn-download">Download CV</a>
+        </div>
+        <div class="social-links-hero">
+          <a href="https://github.com/YasiruLaksara" target="_blank" aria-label="GitHub" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yasiru-laksara-296a28261" target="_blank" aria-label="LinkedIn" class="social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="images/profile/My Pic.png" alt="Yasiru Laksara" class="profile-pic-hero" />
+        </div>
+      </div>
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
     </header>
 
-    <section class="intro-section">
-      <div class="profile">
-        <img
-          class="profile-pic"
-          src="images/My Pic.png"
-          alt="Profile Picture"
-        />
-        <h2>Hello.</h2>
-        <p>
-          I am a self-motivated Computer Science and Engineering undergraduate
-          at the University of Moratuwa, dedicated to becoming a qualified
-          professional in the field. I am particularly interested in Data
-          Science and Machine Learning, and I am committed to continuous
-          learning and effective teamwork. I aim to apply my growing expertise
-          to make meaningful contributions to the fields of machine learning and
-          artificial intelligence.
-        </p>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              I am a self-motivated Computer Science and Engineering undergraduate
+              at the University of Moratuwa, dedicated to becoming a qualified
+              professional in the field. I am particularly interested in Data
+              Science and Machine Learning, and I am committed to continuous
+              learning and effective teamwork.
+            </p>
+            <p class="about-details">
+              I aim to apply my growing expertise to make meaningful contributions 
+              to the fields of machine learning and artificial intelligence. Through 
+              hands-on projects and continuous learning, I strive to develop innovative 
+              solutions that address real-world challenges.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2><a href="technicalSkills.html">Technical Skills</a></h2>
-      <a href="technicalSkills.html">
-        <img
-          src="images/creative-thinking.png"
-          alt="Technical Skills Image"
-          class="section-img"
-        />
-      </a>
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-company-logo">
+                <a href="https://www.cmlinsight.com/" target="_blank" rel="noopener">
+                  <img src="images/experience/CML Insight.png" alt="CML Insight Inc." />
+                </a>
+              </div>
+              <div class="experience-details">
+                <h3 class="experience-title">Machine Learning Engineering Intern</h3>
+                <h4 class="experience-company">
+                  <a href="https://www.cmlinsight.com/" target="_blank" rel="noopener">CML Insight Inc.</a>
+                </h4>
+                <div class="experience-meta">
+                  <span class="experience-duration">📅 December 2024 - May 2025</span>
+                  <span class="experience-location">📍 Remote / Sri Lanka</span>
+                </div>
+              </div>
+            </div>
+            <div class="experience-description">
+              <ul class="experience-highlights">
+                <li>Developed intelligent multi-agent systems for a Causal AI-Driven Education Intervention System, utilizing OpenAI Agent SDK and Google ADK to support adaptive human-AI collaboration.</li>
+                <li>Engineered autonomous pipelines for LLM performance testing using frameworks like DeepEval and gained hands-on exposure to fine-tuning OpenAI-based models tailored to specific use cases.</li>
+                <li>Developed a custom function-based plugin to enhance document extraction workflows for unstructured research data, optimizing system efficiency and reducing API costs.</li>
+                <li>Conducted technical research on agentic architectures and delivered a Tech Talk on OpenAI Custom Functions to share implementation strategies with the engineering team.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2><a href="projects.html">Projects</a></h2>
-      <a href="projects.html">
-        <img
-          src="images/project.png"
-          alt="Projects Image"
-          class="section-img"
-        />
-      </a>
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+          <div class="education-item">
+            <div class="education-date">2021 - Present</div>
+            <div class="education-content">
+              <div class="education-header">
+                <div class="education-emblem">
+                  <img src="images/education/University_emblem.jpg" alt="University of Moratuwa" />
+                </div>
+                <div class="education-details">
+                  <h3 class="education-degree">B.Sc. (Hons) in Computer Science and Engineering</h3>
+                  <h4 class="education-institution">University of Moratuwa</h4>
+                </div>
+              </div>
+              <p class="education-description">
+                Specializing in Data Science and Engineering
+              </p>
+              <div class="education-results">
+                <div class="result-highlight">
+                  <span class="result-subject">GPA</span>
+                  <span class="result-grade">3.67/4.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-date">2020</div>
+            <div class="education-content">
+              <div class="education-header">
+                <div class="education-emblem">
+                  <img src="images/education/school_emblem.png" alt="Vijayaba National School" />
+                </div>
+                <div class="education-details">
+                  <h3 class="education-degree">GCE Advanced Level - Physical Science</h3>
+                  <h4 class="education-institution">Vijayaba National School, Hungama</h4>
+                </div>
+              </div>
+              <div class="education-results">
+                <div class="result-item">
+                  <span class="result-subject">Physics</span>
+                  <span class="result-grade">A</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-subject">Combined Mathematics</span>
+                  <span class="result-grade">A</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-subject">Chemistry</span>
+                  <span class="result-grade">A</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-subject">General English</span>
+                  <span class="result-grade">A</span>
+                </div>
+                <div class="result-highlight">
+                  <span class="result-subject">Z-Score</span>
+                  <span class="result-grade">2.0939</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-date">2017</div>
+            <div class="education-content">
+              <div class="education-header">
+                <div class="education-emblem">
+                  <img src="images/education/school_emblem.png" alt="Vijayaba National School" />
+                </div>
+                <div class="education-details">
+                  <h3 class="education-degree">GCE Ordinary Level</h3>
+                  <h4 class="education-institution">Vijayaba National School, Hungama</h4>
+                </div>
+              </div>
+              <div class="education-results">
+                <div class="result-highlight">
+                  <span class="result-subject">Results</span>
+                  <span class="result-grade">8 A's and 1 B</span>
+                </div>
+                <div class="result-item" style="margin-top: 0.5rem;">
+                  <span class="result-subject">English Literature</span>
+                  <span class="result-grade">B</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2><a href="acheivements.html">Acheivements</a></h2>
-      <a href="acheivements.html">
-        <img
-          src="images/trophy.png"
-          alt="Acheivement Image"
-          class="section-img"
-        />
-      </a>
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          
+          <!-- Programming Languages -->
+          <div class="skill-category">
+            <div class="category-icon">💻</div>
+            <h3 class="category-title">Programming Languages</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Java</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C++</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-category">
+            <div class="category-icon">🌐</div>
+            <h3 class="category-title">Web Technologies</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">React.js</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Node.js</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Spring Boot</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">FastAPI</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Flask</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Streamlit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database Systems -->
+          <div class="skill-category">
+            <div class="category-icon">🗄️</div>
+            <h3 class="category-title">Database Systems</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MySQL</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science & ML -->
+          <div class="skill-category">
+            <div class="category-icon">🤖</div>
+            <h3 class="category-title">Data Science & Machine Learning</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">NumPy & Pandas</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">scikit-learn</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TensorFlow & Keras</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">OpenCV</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Hugging Face Transformers</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Matplotlib & Seaborn</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agentic/LLM Frameworks -->
+          <div class="skill-category">
+            <div class="category-icon">🧠</div>
+            <h3 class="category-title">Agentic & LLM Frameworks</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Google ADK</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">OpenAI SDK</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">LangChain</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">LangGraph</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">LangSmith</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">LangFuse</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud Technologies -->
+          <div class="skill-category">
+            <div class="category-icon">☁️</div>
+            <h3 class="category-title">Cloud Technologies</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Google Cloud Platform</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Firebase</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Netlify</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DevOps & Version Control -->
+          <div class="skill-category">
+            <div class="category-icon">⚙️</div>
+            <h3 class="category-title">DevOps & Version Control</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Git & GitHub</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Docker</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>
-        <a href="academicCertifications.html"
-          >Academic Certifications Achieved</a
-        >
-      </h2>
-      <a href="academicCertifications.html">
-        <img
-          src="images/medal.png"
-          alt="Certificate Image"
-          class="section-img"
-        />
-      </a>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <!-- Project Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="data-science">Data Science</button>
+          <button class="filter-btn" data-filter="software">Software Engineering</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- ResQ -->
+          <div class="project-card" data-category="data-science">
+            <div class="project-image">
+              <img src="images/projects/resq.png" alt="ResQ Connect" />
+              <div class="project-overlay">
+                <a href="https://github.com/Isara-Li/ResQ" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">LangChain</span>
+                <span class="tag">LangGraph</span>
+                <span class="tag">LangSmith</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">GCP</span>
+                <span class="tag">Gemini</span>
+                <span class="tag">DeepEval</span>
+                <span class="tag">Tavily API</span>
+              </div>
+              <h3 class="project-title">ResQ</h3>
+              <p class="project-subtitle">AI-Powered Disaster Response Coordination Platform</p>
+              <p class="project-description">
+                Developed an AI-powered disaster response platform that processes multimodal inputs (text, voice, and images) to capture urgent requests and route them intelligently. Built a priority-based matching engine that assigns responders based on location, skills, and urgency, with role-specific dashboards for victims, volunteers, first responders, and government agencies to ensure coordinated, safe, and efficient disaster relief operations.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 May 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HealthBot+ -->
+          <div class="project-card" data-category="data-science">
+            <div class="project-image">
+              <img src="images/projects/Healthbot+.png" alt="HealthBot+" />
+              <div class="project-overlay">
+                <a href="https://github.com/YasiruLaksara/HealthBot_Plus" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Hugging Face</span>
+                <span class="tag">Grad-CAM</span>
+                <span class="tag">OpenAI API</span>
+              </div>
+              <h3 class="project-title">HealthBot+</h3>
+              <p class="project-subtitle">AI-Powered Web Application for Early Skin Disease Detection</p>
+              <p class="project-description">
+                Developed an AI-powered web application for early skin disease detection using transfer learning and Explainable AI, integrating a medical chatbot and automated reporting for accurate and transparent patient care.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 Jul 2024 - Sep 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ML Olympiad -->
+          <div class="project-card" data-category="data-science">
+            <div class="project-image">
+              <img src="images/projects/ML Olympiad - Sustainable Urban Living.png" alt="ML Olympiad" />
+              <div class="project-overlay">
+                <a href="https://github.com/YasiruLaksara/ML-Olympiad---Sustainable-Urban-Living" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">ML</span>
+              </div>
+              <h3 class="project-title">ML Olympiad - Sustainable Urban Living</h3>
+              <p class="project-description">
+                Machine learning model to predict habitability scores of properties for sustainable urban planning. 
+                Secured 3rd place in Kaggle competition.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 July 2024 - Aug 2024</span>
+                <span class="achievement-badge">🏆 3rd Place</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- InnoVest -->
+          <div class="project-card" data-category="software">
+            <div class="project-image">
+              <img src="images/projects/innovest.jpg" alt="InnoVest" />
+              <div class="project-overlay">
+                <a href="https://github.com/InnoVest-Organization" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Keycloak</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Docker</span>
+                <span class="tag">ArgoCD</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Stripe</span>
+              </div>
+              <h3 class="project-title">InnoVest</h3>
+              <p class="project-subtitle">Microservices-Based Innovation Funding Platform</p>
+              <p class="project-description">
+                Built a web-based platform connecting innovators with investors through a transparent bidding system. Streamlined the funding process via automated interest-based matching, detailed product showcases, and secure payment integration for subscriptions.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 Jan 2025 - Jun 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HR Management System -->
+          <div class="project-card" data-category="software">
+            <div class="project-image">
+              <img src="images/projects/HRM System.jpeg" alt="HR Management System" />
+              <div class="project-overlay">
+                <a href="https://github.com/YasiruLaksara/HR-Management-System" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Express</span>
+              </div>
+              <h3 class="project-title">HR Management System</h3>
+              <p class="project-description">
+                Full-stack HRMS for Jupiter Apparels with comprehensive employee management, 
+                payroll processing, and reporting features.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 Aug 2023 - Nov 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ANPR -->
+          <div class="project-card" data-category="data-science">
+            <div class="project-image">
+              <img src="images/projects/Automatic Number Plate Recognition.png" alt="ANPR" />
+              <div class="project-overlay">
+                <a href="https://github.com/YasiruLaksara/Automatic-Number-Plate-Recognition" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">YOLOv8</span>
+              </div>
+              <h3 class="project-title">Automatic Number Plate Recognition</h3>
+              <p class="project-description">
+                Real-time ANPR system using YOLOv8 for vehicle detection and OCR for license plate 
+                recognition with bounding box visualization.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 June 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- T20 Cricket Predictor -->
+          <div class="project-card" data-category="data-science">
+            <div class="project-image">
+              <img src="images/projects/cricket_Predictor.png" alt="T20 Cricket Predictor" />
+              <div class="project-overlay">
+                <a href="https://github.com/YasiruLaksara/T20-Cricket-Score-Predictor" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">ML</span>
+              </div>
+              <h3 class="project-title">T20 Cricket Score Predictor</h3>
+              <p class="project-description">
+                Web-based machine learning model to predict final T20 cricket match scores 
+                based on current match statistics and historical data.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 July 2024 - Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2><a href="extracurricular.html">Extra Curricular</a></h2>
-      <a href="extracurricular.html">
-        <img
-          src="images/extracurricular.png"
-          alt="Extracurricular Image"
-          class="section-img"
-        />
-      </a>
+    <!-- Achievements Section -->
+    <section class="achievements-section" id="achievements">
+      <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-grid">
+          <!-- CYPHER 2.0 - 1st Place -->
+          <div class="achievement-card">
+            <div class="achievement-image">
+              <img src="images/achievements/1st Place Acheivement Proof.jpg" alt="CYPHER 1st Place" />
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-badge-top">🥇 1st Place</div>
+              <h3 class="achievement-title">CYPHER 2.0 Hackathon</h3>
+              <div class="achievement-meta">
+                <span class="achievement-org">IEEE WIE Student Branch Affinity Group of KDU</span>
+                <span class="achievement-date">📅 March 2024</span>
+              </div>
+              <p class="achievement-description">
+                Showcased problem-solving and time management skills in a 5-hour coding challenge, securing first place as champions.
+              </p>
+              <a href="https://www.facebook.com/share/WbaqJTJiXxuAJ3Zg/?mibextid=oFDknk" class="achievement-link" target="_blank">View Post →</a>
+            </div>
+          </div>
+
+          <!-- IntelliHack 5.0 - 1st Runner-Up -->
+          <div class="achievement-card">
+            <div class="achievement-image">
+              <img src="images/achievements/IntelliHack 5.O.jpg" alt="IntelliHack 5.0 1st Runner-Up" />
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-badge-top">🥈 1st Runner-Up</div>
+              <h3 class="achievement-title">IntelliHack 5.0</h3>
+              <div class="achievement-meta">
+                <span class="achievement-org">IEEE Computer Society Student Branch Chapter of UCSC</span>
+                <span class="achievement-date">📅 June 2025</span>
+              </div>
+              <p class="achievement-description">
+                Developed an agent-based system to improve disaster response coordination, competing against over 100 teams and 350+ participants.
+              </p>
+              <a href="https://www.linkedin.com/posts/ieee-computer-society-student-branch-chapter-of-ucsc_intellihack5-ieeeucsc-ucsc-activity-7337436616908525568-ZASy" class="achievement-link" target="_blank">View Post →</a>
+            </div>
+          </div>
+
+          <!-- ML Olympiad - 2nd Runner-Up -->
+          <div class="achievement-card">
+            <div class="achievement-image">
+              <img src="images/achievements/Kaggel.png" alt="Kaggle 2nd Runner-Up" />
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-badge-top">🥉 2nd Runner-Up</div>
+              <h3 class="achievement-title">ML Olympiad - Sustainable Urban Living</h3>
+              <div class="achievement-meta">
+                <span class="achievement-org">Kaggle</span>
+                <span class="achievement-date">📅 March 2024</span>
+              </div>
+              <p class="achievement-description">
+                Demonstrated machine learning problem-solving skills by individually developing a model to predict property habitability scores, distinguishing myself among 120+ participants.
+              </p>
+              <a href="https://www.kaggle.com/competitions/ml-olympiad-sustainable-urban-living/leaderboard" class="achievement-link" target="_blank">View Leaderboard →</a>
+            </div>
+          </div>
+
+          <!-- CodeFest 2024 - 2nd Runner-Up -->
+          <div class="achievement-card">
+            <div class="achievement-image">
+              <img src="images/achievements/CodeFest.jpg" alt="CodeFest 2024 2nd Runner-Up" />
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-badge-top">🥉 2nd Runner-Up</div>
+              <h3 class="achievement-title">CodeFest-2024 Datathon Competition</h3>
+              <div class="achievement-meta">
+                <span class="achievement-org">SLIIT</span>
+                <span class="achievement-date">📅 January 2025</span>
+              </div>
+              <p class="achievement-description">
+                Applied machine learning, data analysis, and problem-solving skills throughout a 6-hour datathon challenge.
+              </p>
+            </div>
+          </div>
+
+          <!-- HaXtreme 3.0 - 9th Place -->
+          <div class="achievement-card">
+            <div class="achievement-image">
+              <img src="images/achievements/Haxtreme.jpeg" alt="HaXtreme 3.0 9th Place" />
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-badge-top">🏆 9th Place</div>
+              <h3 class="achievement-title">HaXtreme 3.0</h3>
+              <div class="achievement-meta">
+                <span class="achievement-org">IEEE Computer Society, University of Ruhuna</span>
+                <span class="achievement-date">📅 October 2024</span>
+              </div>
+              <p class="achievement-description">
+                Showcased problem-solving and time management skills in a 6-hour coding challenge, excelling among 100+ competing teams.
+              </p>
+              <a href="https://www.linkedin.com/posts/ieeecs-uor_haxtreme3-haxtreme-ieee-activity-7248691139736707072-oLHa" class="achievement-link" target="_blank">View Post →</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2><a href="education.html">Education</a></h2>
-      <a href="education.html">
-        <img
-          src="images/education.png"
-          alt="Education Image"
-          class="section-img"
-        />
-      </a>
+    <!-- Education Section -->
+    <!-- Publications Section -->
+    <section class="publications-section" id="publications">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        
+        <div class="publications-grid">
+          <div class="publication-card">
+            <a href="https://arxiv.org/abs/2511.18839" target="_blank" rel="noopener" class="publication-image-link">
+              <div class="publication-image">
+                <img src="images/publications/paper_1.png" alt="Thoracic Disease Diagnosis Research" />
+                <div class="publication-badge">Preprint</div>
+              </div>
+            </a>
+            <div class="publication-content">
+              <h3 class="publication-title">Enhancing Multi-Label Thoracic Disease Diagnosis with Deep Ensemble-Based Uncertainty Quantification</h3>
+              
+              <div class="publication-authors">
+                <strong>Yasiru Laksara</strong>, Uthayasanker Thayasivam
+              </div>
+              
+              <div class="publication-venue">
+                <div class="venue-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                  <span>arXiv:2511.18839</span>
+                </div>
+                <div class="venue-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Accepted for oral presentation at ICITR 2025 (IEEE)</span>
+                </div>
+              </div>
+
+              <div class="publication-abstract-container">
+                <h4 class="abstract-heading">Abstract</h4>
+                <p class="publication-abstract">
+                  The utility of deep learning models, such as CheXNet, in high stakes clinical settings is fundamentally constrained by their purely deterministic nature, failing to provide reliable measures of predictive confidence. This project addresses this critical gap by integrating robust Uncertainty Quantification (UQ) into a high performance diagnostic platform for 14 common thoracic diseases on the NIH ChestX-ray14 dataset. Initial architectural development failed to stabilize performance and calibration using Monte Carlo Dropout (MCD), yielding an unacceptable Expected Calibration Error (ECE) of 0.7588. This technical failure necessitated a rigorous architectural pivot to a high diversity, 9-member Deep Ensemble (DE). This resulting DE successfully stabilized performance and delivered superior reliability, achieving a State-of-the-Art (SOTA) average Area Under the Receiver Operating Characteristic Curve (AUROC) of 0.8559 and an average F1 Score of 0.3857. Crucially, the DE demonstrated superior calibration (Mean ECE of 0.0728 and Negative Log-Likelihood (NLL) of 0.1916) and enabled the reliable decomposition of total uncertainty into its Aleatoric (irreducible data noise) and Epistemic (reducible model knowledge) components, with a mean Epistemic Uncertainty (EU) of 0.0240. These results establish the Deep Ensemble as a trustworthy and explainable platform, transforming the model from a probabilistic tool into a reliable clinical decision support system.
+                </p>
+              </div>
+
+              <div class="publication-tags">
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Medical Imaging</span>
+                <span class="tag">Uncertainty Quantification</span>
+                <span class="tag">Ensemble Methods</span>
+              </div>
+
+              <div class="publication-actions">
+                <a href="https://arxiv.org/abs/2511.18839" class="btn btn-primary btn-publication" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                  Read Paper
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section class="certifications-section" id="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+          
+          <!-- NVIDIA Deep Learning Certificate -->
+          <div class="certification-card">
+            <div class="certification-image">
+              <img src="images/certifications/Fundamentals of Deep Learning_Certificate.jpg" alt="NVIDIA Deep Learning Certificate" />
+            </div>
+            <div class="certification-content">
+              <h3 class="certification-title">Fundamentals of Deep Learning</h3>
+              <div class="certification-meta">
+                <p class="certification-org">NVIDIA</p>
+                <p class="certification-date">September 2025</p>
+              </div>
+              <a href="https://learn.nvidia.com/certificates?id=viTwfp2KTDCT5MNpsp3Uqg" target="_blank" rel="noopener" class="certification-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <!-- AWS Machine Learning Foundations -->
+          <div class="certification-card">
+            <div class="certification-image">
+              <img src="images/certifications/Machine Learning Foundations_Cetificate.png" alt="AWS Machine Learning Certificate" />
+            </div>
+            <div class="certification-content">
+              <h3 class="certification-title">Machine Learning Foundations</h3>
+              <div class="certification-meta">
+                <p class="certification-org">AWS Academy</p>
+                <p class="certification-date">February 2024</p>
+              </div>
+              <a href="https://www.credly.com/badges/07d5ae2c-abc5-47db-a8fa-0f2cddeb1054/linked_in_profile" target="_blank" rel="noopener" class="certification-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <!-- Coursera Supervised ML -->
+          <div class="certification-card">
+            <div class="certification-image">
+              <img src="images/certifications/Supervised Machine Learning_Certificate.jpeg" alt="Coursera Supervised ML Certificate" />
+            </div>
+            <div class="certification-content">
+              <h3 class="certification-title">Supervised Machine Learning</h3>
+              <div class="certification-meta">
+                <p class="certification-org">Coursera</p>
+                <p class="certification-date">April 2024</p>
+              </div>
+              <a href="https://www.coursera.org/account/accomplishments/verify/9Q5C52BJXPK3" target="_blank" rel="noopener" class="certification-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <!-- Kaggle Intro to ML -->
+          <div class="certification-card">
+            <div class="certification-image">
+              <img src="images/certifications/Intro to Machine Learning_Certificate.png" alt="Kaggle ML Certificate" />
+            </div>
+            <div class="certification-content">
+              <h3 class="certification-title">Intro to Machine Learning</h3>
+              <div class="certification-meta">
+                <p class="certification-org">Kaggle</p>
+                <p class="certification-date">January 2024</p>
+              </div>
+              <a href="https://www.kaggle.com/learn/certification/laksaraky210329e/intro-to-machine-learning" target="_blank" rel="noopener" class="certification-link">View Certificate →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Experience Section -->
+    <section class="volunteer-section" id="volunteer">
+      <div class="container">
+        <h2 class="section-title">Volunteer Experience</h2>
+        <div class="volunteer-grid">
+
+          <!-- Mora UXplore 2.0 -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">📝</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Editorial Committee Member</h3>
+                <h4 class="volunteer-org">Mora UXplore 2.0 - IEEE Student Branch, University of Moratuwa</h4>
+                <span class="volunteer-date">📅 February 2024 - December 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- M-Tutor -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">💰</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Finance Committee Member</h3>
+                <h4 class="volunteer-org">M-Tutor - Maths Society, University of Moratuwa</h4>
+                <span class="volunteer-date">📅 February 2024 - December 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEXTGEN 1.0 -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">📝</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Editorial Committee Member</h3>
+                <h4 class="volunteer-org">NEXTGEN 1.0 - IEEE Robotics & Automation Society, University of Moratuwa</h4>
+                <span class="volunteer-date">📅 January 2024 - April 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIoT Challenge -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">📢</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Publicity Committee Member</h3>
+                <h4 class="volunteer-org">SLIoT Challenge - Department of CSE, University of Moratuwa</h4>
+                <span class="volunteer-date">📅 October 2023 - April 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MoraXtreme 8.0 -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">📝</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Editorial Committee Member</h3>
+                <h4 class="volunteer-org">MoraXtreme 8.0 - IEEE Computer Society</h4>
+                <span class="volunteer-date">📅 October 2023 - January 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXMO 2023 -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">🎪</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Event Committee Member</h3>
+                <h4 class="volunteer-org">EXMO 2023 - Flagship Technological Exhibition, University of Moratuwa</h4>
+                <span class="volunteer-date">📅 July 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shilpasara -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">🤝</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Project Member</h3>
+                <h4 class="volunteer-org">Shilpasara - LEO Club of the University of Moratuwa</h4>
+                <span class="volunteer-date">📅 October 2022 - November 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSE Career Fair 2024 -->
+          <div class="volunteer-card">
+            <div class="volunteer-header">
+              <div class="volunteer-icon">📋</div>
+              <div class="volunteer-details">
+                <h3 class="volunteer-title">Organizing Committee Member</h3>
+                <h4 class="volunteer-org">CSE Career Fair 2024 - Department of CSE, University of Moratuwa</h4>
+                <span class="volunteer-date">📅 January 2024</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="section-title-alt">Get In Touch</h2>
+            <p class="contact-description">
+              I love connecting with everyone and I'm always open to discussing new 
+              opportunities, collaborations, or innovative ideas in Data Science and Machine Learning.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <a href="mailto:yasirul.21@cse.mrt.ac.lk">yasirul.21@cse.mrt.ac.lk</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">💼</div>
+                <div class="contact-details">
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/yasiru-laksara-296a28261" target="_blank">Connect with me</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">💻</div>
+                <div class="contact-details">
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/YasiruLaksara" target="_blank">View my repositories</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <a href="mailto:yasirul.21@cse.mrt.ac.lk" class="btn btn-primary btn-large">Send Me an Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-      <div class="contact">
-        <h2>Get In Touch</h2>
-        <h3>I love connecting with everyone.</h3>
-        <p>Feel free to reach out via email for collaborations or inquiries.</p>
-        <a class="btn" href="mailto:yasirul.21@cse.mrt.ac.lk">Contact Me</a>
+      <div class="container">
+        <div class="footer-content">
+          <p class="copyright">© 2025 Yasiru Laksara. All rights reserved.</p>
+        </div>
       </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/yasiru-laksara-296a28261"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/YasiruLaksara">Github</a>
-      </div>
-      <p class="copyright">© 2024 Yasiru Laksara</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
