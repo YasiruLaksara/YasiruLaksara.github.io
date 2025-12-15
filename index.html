@@ -718,11 +718,12 @@
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 6 12 12 16 14"></polyline>
                   </svg>
-                  <span>Submitted to ICITR 2025 (under review)</span>
+                  <span>Accepted for oral presentation at ICITR 2025 (IEEE)</span>
                 </div>
               </div>
 
               <div class="publication-abstract-container">
+                <h4 class="abstract-heading">Abstract</h4>
                 <p class="publication-abstract">
                   The utility of deep learning models, such as CheXNet, in high stakes clinical settings is fundamentally constrained by their purely deterministic nature, failing to provide reliable measures of predictive confidence. This project addresses this critical gap by integrating robust Uncertainty Quantification (UQ) into a high performance diagnostic platform for 14 common thoracic diseases on the NIH ChestX-ray14 dataset. Initial architectural development failed to stabilize performance and calibration using Monte Carlo Dropout (MCD), yielding an unacceptable Expected Calibration Error (ECE) of 0.7588. This technical failure necessitated a rigorous architectural pivot to a high diversity, 9-member Deep Ensemble (DE). This resulting DE successfully stabilized performance and delivered superior reliability, achieving a State-of-the-Art (SOTA) average Area Under the Receiver Operating Characteristic Curve (AUROC) of 0.8559 and an average F1 Score of 0.3857. Crucially, the DE demonstrated superior calibration (Mean ECE of 0.0728 and Negative Log-Likelihood (NLL) of 0.1916) and enabled the reliable decomposition of total uncertainty into its Aleatoric (irreducible data noise) and Epistemic (reducible model knowledge) components, with a mean Epistemic Uncertainty (EU) of 0.0240. These results establish the Deep Ensemble as a trustworthy and explainable platform, transforming the model from a probabilistic tool into a reliable clinical decision support system.
                 </p>
@@ -795,7 +796,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <p class="footer-text">Designed & Built by Yasiru Laksara</p>
           <p class="copyright">© 2025 Yasiru Laksara. All rights reserved.</p>
         </div>
       </div>
