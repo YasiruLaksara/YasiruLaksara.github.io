@@ -397,6 +397,7 @@
           <button class="filter-btn active" data-filter="all">All Projects</button>
           <button class="filter-btn" data-filter="data-science">Data Science</button>
           <button class="filter-btn" data-filter="software">Software Engineering</button>
+          <button class="filter-btn" data-filter="hardware">Hardware</button>
         </div>
 
         <div class="projects-grid">
@@ -454,7 +455,7 @@
               <h3 class="project-title">HealthBot+</h3>
               <p class="project-subtitle">AI-Powered Web Application for Early Skin Disease Detection</p>
               <p class="project-description">
-                Developed an AI-powered web application for early skin disease detection using transfer learning and Explainable AI, integrating a medical chatbot and automated reporting for accurate and transparent patient care.
+                AI-powered web application for early detection of skin diseases including melanoma. Features a fine-tuned Xception model with metadata integration for melanoma detection and a custom CNN for six additional skin conditions. Includes an AI chatbot powered by Whisper and OpenAI API, patient and doctor dashboards with complete report history, Grad-CAM visual explanations for clinical interpretation, and secure authentication.
               </p>
               <div class="project-meta">
                 <span class="project-date">📅 Jul 2024 - Sep 2024</span>
@@ -534,12 +535,58 @@
                 <span class="tag">Express</span>
               </div>
               <h3 class="project-title">HR Management System</h3>
+              <p class="project-subtitle">Full-Stack HRMS for Enterprise Employee Management</p>
               <p class="project-description">
-                Full-stack HRMS for Jupiter Apparels with comprehensive employee management, 
-                payroll processing, and reporting features.
+                Full-stack Human Resource Management System for Jupiter Apparels with robust MySQL database featuring automated validation triggers and optimized views. Implemented Role-Based Access Control for six user hierarchies, dynamic custom field additions, and secure authentication. Includes employee management, leave tracking with approval workflows, and advanced reporting capabilities.
               </p>
               <div class="project-meta">
                 <span class="project-date">📅 Aug 2023 - Nov 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RPAL Interpreter -->
+          <div class="project-card" data-category="software">
+            <div class="project-image">
+              <img src="images/projects/rpal_interpreter.png" alt="RPAL Interpreter" />
+              <div class="project-overlay">
+                <a href="https://github.com/YasiruLaksara/RPAL-Interpreter" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">C++</span>
+              </div>
+              <h3 class="project-title">RPAL Interpreter</h3>
+              <p class="project-subtitle">Complete Interpreter for RPAL Functional Programming Language</p>
+              <p class="project-description">
+                Designed and implemented a complete interpreter for the functional programming language RPAL. Built the full execution pipeline from scratch including a custom lexical analyzer, recursive descent parser, AST construction and transformation into a Standardized Tree, and a Control Stack Environment (CSE) Machine to execute programs with support for recursion, lambda calculus, and tuple operations.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 May 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nanoprocessor Design -->
+          <div class="project-card" data-category="hardware">
+            <div class="project-image">
+              <img src="images/projects/nanoprocessor.png" alt="Nanoprocessor Design" />
+              <div class="project-overlay">
+                <a href="https://github.com/YasiruLaksara/Nanoprocessor-Design-Competition" class="project-link" target="_blank">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">VHDL</span>
+              </div>
+              <h3 class="project-title">Nanoprocessor Design</h3>
+              <p class="project-subtitle">4-bit Nanoprocessor with Instruction Execution</p>
+              <p class="project-description">
+                Designed and implemented a 4-bit nanoprocessor capable of executing four instructions as part of the Computer Organization and Digital Design module. Integrated hardware components including Slow_Clk for clock management, a nanoprocessor core for instruction execution, and LUT_7seg ROM module for seven-segment display output visualization.
+              </p>
+              <div class="project-meta">
+                <span class="project-date">📅 May 2023 - Jun 2023</span>
               </div>
             </div>
           </div>
@@ -555,13 +602,16 @@
             <div class="project-content">
               <div class="project-tags">
                 <span class="tag">Python</span>
-                <span class="tag">OpenCV</span>
                 <span class="tag">YOLOv8</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">EasyOCR</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">SciPy</span>
               </div>
               <h3 class="project-title">Automatic Number Plate Recognition</h3>
               <p class="project-description">
-                Real-time ANPR system using YOLOv8 for vehicle detection and OCR for license plate 
-                recognition with bounding box visualization.
+                Automatic Number Plate Recognition system that processes video files to detect moving vehicles, extract license plates, and read plate numbers using OCR. Tracks vehicles using YOLOv8, performs license plate detection and decoding with EasyOCR, and exports results to CSV with annotated video output featuring bounding boxes around vehicles and plates.
               </p>
               <div class="project-meta">
                 <span class="project-date">📅 June 2024</span>
@@ -582,11 +632,12 @@
                 <span class="tag">Python</span>
                 <span class="tag">Flask</span>
                 <span class="tag">ML</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
               </div>
               <h3 class="project-title">T20 Cricket Score Predictor</h3>
               <p class="project-description">
-                Web-based machine learning model to predict final T20 cricket match scores 
-                based on current match statistics and historical data.
+                Machine learning-powered web application that predicts final T20 cricket match scores in real-time using Random Forest Regressor trained on historical match data. Analyzes key match factors including team performance, venue statistics, current score, overs completed, wickets fallen, and recent scoring trends. Supports 10 international teams across 26 major cricket venues worldwide with dynamic team logo display and responsive interface.
               </p>
               <div class="project-meta">
                 <span class="project-date">📅 July 2024 - Present</span>
