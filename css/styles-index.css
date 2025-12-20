@@ -2701,6 +2701,10 @@ section:nth-child(7) { animation-delay: 0.6s; }
     z-index: 999;
   }
 
+  [data-theme="dark"] .nav-menu {
+    background: rgba(15, 23, 42, 0.98);
+  }
+
   .nav-menu.active {
     left: 0;
   }
